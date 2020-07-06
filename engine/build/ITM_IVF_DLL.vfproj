@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject ProjectType="typeDynamicLibrary" ProjectCreator="Intel Fortran" Keyword="Dll" Version="11.0" ProjectIdGuid="{97A48373-9377-44FE-A226-700CC2A288F5}">
+	<Platforms>
+		<Platform Name="Win32"/></Platforms>
+	<Configurations>
+		<Configuration Name="Debug|Win32" OutputDirectory="$(SolutionDir)ITM_OUT_$(ConfigurationName)" IntermediateDirectory="$(SolutionDir)ITM_$(ConfigurationName)" ConfigurationType="typeDynamicLibrary">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" PreprocessorDefinitions="ITM_USE_DLL" WarnInterfaces="true" Traceback="true" BoundsCheck="true" RuntimeLibrary="rtMultiThreadedDebugDLL" Interfaces="true"/>
+				<Tool Name="VFLinkerTool" OutputFile="$(OutDir)\ITM_DLL.dll" SuppressStartupBanner="true" GenerateDebugInformation="true" SubSystem="subSystemWindows" LinkDLL="true" AdditionalDependencies="SWMM_OUT_$(ConfigurationName)\ITM_IVC_SWMM_LIB.lib"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Release|Win32" OutputDirectory="$(SolutionDir)ITM_OUT_$(ConfigurationName)" IntermediateDirectory="$(SolutionDir)ITM_$(ConfigurationName)" ConfigurationType="typeDynamicLibrary">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" PreprocessorDefinitions="ITM_USE_DLL" RuntimeLibrary="rtMultiThreadedDLL"/>
+				<Tool Name="VFLinkerTool" OutputFile="$(OutDir)\ITM_DLL.dll" SuppressStartupBanner="true" SubSystem="subSystemWindows" LinkDLL="true" AdditionalDependencies="SWMM_OUT_$(ConfigurationName)\ITM_IVC_SWMM_LIB.lib"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Intel_SSA|Win32" ConfigurationType="typeDynamicLibrary">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" PreprocessorDefinitions="ITM_USE_DLL" SV_DiagLevel="svDiagLevel3" ModeOfStaticAnalysis="svDiagModeFull" RuntimeLibrary="rtMultiThreadedDLL"/>
+				<Tool Name="VFLinkerTool" OutputFile="$(OutDir)\ITM_DLL.dll" SuppressStartupBanner="true" SubSystem="subSystemWindows" LinkDLL="true" AdditionalDependencies="SWMM_OUT_$(ConfigurationName)\ITM_IVC_SWMM_LIB.lib"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration></Configurations>
+	<Files>
+		<Filter Name="Header Files" Filter="fi;fd"/>
+		<Filter Name="Resource Files" Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"/>
+		<Filter Name="Source Files" Filter="f90;for;f;fpp;ftn;def;odl;idl">
+		<File RelativePath="..\itm\Area_from_H.for"/>
+		<File RelativePath="..\itm\boundaries.for"/>
+		<File RelativePath="..\itm\Boundary_Open_Press.for"/>
+		<File RelativePath="..\itm\CFL_time_step.for"/>
+		<File RelativePath="..\itm\Comments.for"/>
+		<File RelativePath="..\itm\const_bound.for"/>
+		<File RelativePath="..\itm\converg.for"/>
+		<File RelativePath="..\itm\deallocateALL.for"/>
+		<File RelativePath="..\itm\der_Phi.for"/>
+		<File RelativePath="..\itm\Dropshaft_general.for"/>
+		<File RelativePath="..\itm\ENDPROG.for"/>
+		<File RelativePath="..\itm\ERP_Combined.for"/>
+		<File RelativePath="..\itm\Flux_junction.for"/>
+		<File RelativePath="..\itm\Freesurface_flowregime.for"/>
+		<File RelativePath="..\itm\Gate_one_pipe.for"/>
+		<File RelativePath="..\itm\Gate_two_pipes.for"/>
+		<File RelativePath="..\itm\get_curve_area.f90"/>
+		<File RelativePath="..\itm\get_inflow.for"/>
+		<File RelativePath="..\itm\get_rating_q.f90"/>
+		<File RelativePath="..\itm\get_storage.for"/>
+		<File RelativePath="..\itm\H_from_Area.for"/>
+		<File RelativePath="..\itm\H_from_Phi.for"/>
+		<File RelativePath="..\itm\H_reconst_sloped.for"/>
+		<File RelativePath="..\itm\Init.for"/>
+		<File RelativePath="..\itm\interface_speed.for"/>
+		<File RelativePath="..\itm\itm_conser_volume.for"/>
+		<File RelativePath="..\itm\itm_report.for"/>
+		<File RelativePath="..\itm\junct2pipes_same_diam.for"/>
+		<File RelativePath="..\itm\junction_general.for"/>
+		<File RelativePath="..\itm\junction_two_pipes_same_D_with_inflow.for"/>
+		<File RelativePath="..\itm\MAIN_PROGRAM.for"/>
+		<File RelativePath="..\itm\MINMOD.for"/>
+		<File RelativePath="..\itm\minpack.f90"/>
+		<File RelativePath="..\itm\MODULE.for"/>
+		<File RelativePath="..\itm\Phi1.for"/>
+		<File RelativePath="..\itm\Pressure_Pho.for"/>
+		<File RelativePath="..\itm\Rating_curve.for"/>
+		<File RelativePath="..\itm\Reservoirs.for"/>
+		<File RelativePath="..\itm\Riemann_open.for"/>
+		<File RelativePath="..\itm\Riemann_pressur.for"/>
+		<File RelativePath="..\itm\Riemann_pressur_open.for"/>
+		<File RelativePath="..\itm\Source_term.for"/>
+		<File RelativePath="..\itm\swmm_accessors.f90"/>
+		<File RelativePath="..\itm\swmm_hotstart.f90"/>
+		<File RelativePath="..\itm\swmm_hotstart_read_vars.f90"/>
+		<File RelativePath="..\itm\swmm_hotstart_write_vars.f90"/>
+		<File RelativePath="..\itm\swmm_io.f90"/>
+		<File RelativePath="..\itm\swmm_run.f90"/>
+		<File RelativePath="..\itm\Util.for"/>
+		<File RelativePath="..\itm\Util_star.for"/>
+		<File RelativePath="..\itm\volume_sloped.for"/></Filter></Files>
+	<Globals/></VisualStudioProject>

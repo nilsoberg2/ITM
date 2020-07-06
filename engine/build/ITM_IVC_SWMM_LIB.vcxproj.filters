@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\swmm\climate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swmm\controls.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swmm\datetime.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swmm\dynwave.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swmm\error.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swmm\findroot.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swmm\flowrout.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swmm\forcmain.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swmm\gage.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swmm\gwater.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swmm\hash.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swmm\iface.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swmm\infil.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swmm\inflow.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swmm\input.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swmm\inputrpt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swmm\itm_accessors.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swmm\itm_io.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swmm\itm_run.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swmm\keywords.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swmm\kinwave.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swmm\landuse.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swmm\link.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swmm\massbal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swmm\mathexpr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swmm\mempool.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swmm\node.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swmm\odesolve.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swmm\output.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swmm\project.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swmm\qualrout.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swmm\rain.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swmm\rdii.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swmm\report.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swmm\routing.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swmm\runoff.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swmm\shape.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swmm\snow.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swmm\stats.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swmm\statsrpt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swmm\subcatch.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swmm\swmm5.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swmm\table.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swmm\toposort.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swmm\transect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swmm\treatmnt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swmm\xsect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\swmm\consts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\swmm\datetime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\swmm\debug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\swmm\enums.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\swmm\error.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\swmm\findroot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\swmm\funcs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\swmm\globals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\swmm\hash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\swmm\headers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\swmm\itm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\swmm\keywords.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\swmm\macros.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\swmm\mathexpr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\swmm\mempool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\swmm\objects.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\swmm\odesolve.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\swmm\swmm5.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\swmm\text.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

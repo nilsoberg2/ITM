@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EEA66E6A-DEE9-4AA8-8CBB-686883A896C3}</ProjectGuid>
+    <RootNamespace>ITM_IVC_SWMM_LIB</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.26430.15</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)SWMM_OUT_$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)SWMM_$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)SWMM_OUT_$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)SWMM_$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\swmm\climate.c" />
+    <ClCompile Include="..\swmm\controls.c" />
+    <ClCompile Include="..\swmm\datetime.c" />
+    <ClCompile Include="..\swmm\dynwave.c" />
+    <ClCompile Include="..\swmm\error.c" />
+    <ClCompile Include="..\swmm\findroot.c" />
+    <ClCompile Include="..\swmm\flowrout.c" />
+    <ClCompile Include="..\swmm\forcmain.c" />
+    <ClCompile Include="..\swmm\gage.c" />
+    <ClCompile Include="..\swmm\gwater.c" />
+    <ClCompile Include="..\swmm\hash.c" />
+    <ClCompile Include="..\swmm\iface.c" />
+    <ClCompile Include="..\swmm\infil.c" />
+    <ClCompile Include="..\swmm\inflow.c" />
+    <ClCompile Include="..\swmm\input.c" />
+    <ClCompile Include="..\swmm\inputrpt.c" />
+    <ClCompile Include="..\swmm\itm_accessors.c" />
+    <ClCompile Include="..\swmm\itm_io.c" />
+    <ClCompile Include="..\swmm\itm_run.c" />
+    <ClCompile Include="..\swmm\keywords.c" />
+    <ClCompile Include="..\swmm\kinwave.c" />
+    <ClCompile Include="..\swmm\landuse.c" />
+    <ClCompile Include="..\swmm\link.c" />
+    <ClCompile Include="..\swmm\massbal.c" />
+    <ClCompile Include="..\swmm\mathexpr.c" />
+    <ClCompile Include="..\swmm\mempool.c" />
+    <ClCompile Include="..\swmm\node.c" />
+    <ClCompile Include="..\swmm\odesolve.c" />
+    <ClCompile Include="..\swmm\output.c" />
+    <ClCompile Include="..\swmm\project.c" />
+    <ClCompile Include="..\swmm\qualrout.c" />
+    <ClCompile Include="..\swmm\rain.c" />
+    <ClCompile Include="..\swmm\rdii.c" />
+    <ClCompile Include="..\swmm\report.c" />
+    <ClCompile Include="..\swmm\routing.c" />
+    <ClCompile Include="..\swmm\runoff.c" />
+    <ClCompile Include="..\swmm\shape.c" />
+    <ClCompile Include="..\swmm\snow.c" />
+    <ClCompile Include="..\swmm\stats.c" />
+    <ClCompile Include="..\swmm\statsrpt.c" />
+    <ClCompile Include="..\swmm\subcatch.c" />
+    <ClCompile Include="..\swmm\swmm5.c" />
+    <ClCompile Include="..\swmm\table.c" />
+    <ClCompile Include="..\swmm\toposort.c" />
+    <ClCompile Include="..\swmm\transect.c" />
+    <ClCompile Include="..\swmm\treatmnt.c" />
+    <ClCompile Include="..\swmm\xsect.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\swmm\consts.h" />
+    <ClInclude Include="..\swmm\datetime.h" />
+    <ClInclude Include="..\swmm\debug.h" />
+    <ClInclude Include="..\swmm\enums.h" />
+    <ClInclude Include="..\swmm\error.h" />
+    <ClInclude Include="..\swmm\findroot.h" />
+    <ClInclude Include="..\swmm\funcs.h" />
+    <ClInclude Include="..\swmm\globals.h" />
+    <ClInclude Include="..\swmm\hash.h" />
+    <ClInclude Include="..\swmm\headers.h" />
+    <ClInclude Include="..\swmm\itm.h" />
+    <ClInclude Include="..\swmm\keywords.h" />
+    <ClInclude Include="..\swmm\macros.h" />
+    <ClInclude Include="..\swmm\mathexpr.h" />
+    <ClInclude Include="..\swmm\mempool.h" />
+    <ClInclude Include="..\swmm\objects.h" />
+    <ClInclude Include="..\swmm\odesolve.h" />
+    <ClInclude Include="..\swmm\swmm5.h" />
+    <ClInclude Include="..\swmm\text.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
