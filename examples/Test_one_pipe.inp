@@ -1,0 +1,62 @@
+[TITLE]
+
+[OPTIONS]
+  FLOW_UNITS                 CMS
+  START_DATE                 09/12/2009
+  START_TIME                 00:00:00
+  END_DATE                   09/12/2009
+  END_TIME                   00:04:00
+  MAX_TIME_STEP              1
+  REPORT_START_DATE          09/12/2009
+  REPORT_START_TIME          00:00:00
+  ; HOURS:MINUTES:SECONDS
+  REPORT_STEP                00:00:01
+  ; MILLISECONDS
+  FRACTIONAL_REPORT_STEP     10
+  MIN_NUM_GRIDS              50
+  PRESSURIZED_WAVE_CELERITY  50
+  REF_DEPTH_FRACTION         0.97
+  MAX_NUM_ITERATIONS         300
+  MAX_NUM_CELLS              500
+  MAX_NUM_PLOT_CELLS         100
+  ITM_FLOW_TYPE              MIXED-FLOW
+
+[CONSTBOUNDS]
+;;               Invert     Boundary       Dropshaft     Boundary   
+;;Name           Elev.      Condition      (Ventilated)? Value      
+;;-------------- ---------- -------------- ------------- -----------
+NodeB            0.0000000000000000000000000000000000 CONST/FLOW     YES           0         
+NodeA            20         CONST/FLOW     YES           0         
+
+[CONDUITS]
+;;               Inlet            Outlet                      Manning    Inlet      Outlet     Init.      Initial    Initial   
+;;Name           Node             Node             Length     N          Offset     Offset     Flow       Depth type Depth     
+;;-------------- ---------------- ---------------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
+Pipe1            NodeA            NodeB            1000       0.015      0          0          2000       NORMAL     0         
+
+[XSECTIONS]
+;;Link           Shape        Diameter        
+;;-------------- ------------ ----------------
+Pipe1            CIRCULAR     20              
+
+[LOSSES]
+;;Link           Inlet      Outlet    
+;;-------------- ---------- ----------
+Pipe1            0.5        0.5       
+
+[TAGS]
+
+[MAP]
+DIMENSIONS 612953.311 1850571.223 692990.803 1976329.296
+Units      None
+
+[COORDINATES]
+;;Node           X-Coord            Y-Coord           
+;;-------------- ------------------ ------------------
+NodeB            609738.155         1903299.056       
+NodeA            671813.859         1945510.535       
+
+[VERTICES]
+;;Link           X-Coord            Y-Coord           
+;;-------------- ------------------ ------------------
+

@@ -35,7 +35,7 @@ subroutine itm_end
 
 	character*1024 errorstring
 	integer itmresult
-	
+
 	itmresult = itm_end_swmm()
     !itmresult = itm_close_swmm()
 

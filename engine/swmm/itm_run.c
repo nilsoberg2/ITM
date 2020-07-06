@@ -106,9 +106,6 @@ int itm_open_start_swmm(char* f1, char* f2, char* f3)
 
 int itm_close_swmm()
 {
-	DEBUGWRITE("ITM_CLOSE_SWMM");
-
-	//fclose(xxxxxx);
 	return swmm_close();
 }
 
